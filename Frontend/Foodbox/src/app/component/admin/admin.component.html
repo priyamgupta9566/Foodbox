@@ -1,0 +1,121 @@
+<h3 style="text-align: center; margin-top: 10px; margin-bottom: 0px; color: deepskyblue;"><strong>Admin Portal </strong></h3>
+<div class="container">
+    <div class="center">
+   
+<div>
+<form class="card" #fooditemRef="ngForm" (ngSubmit)="storeFoodItem(fooditemRef)"> 
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Id</label>
+      <div class="col-sm-10">
+      <input type="text" class="form-control" id="id" placeholder="Enter id" ngModel name="id"><br>
+      
+    </div>
+</div>
+    <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter name" ngModel name="name"><br>
+        
+      </div>
+    </div>
+      <div class="form-group row">
+        <label for="category" class="col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="category" placeholder="Enter Category" ngModel name="category"><br>
+    </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="price" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+        <input type="number" class="form-control" id="price" placeholder="Enter Price" ngModel name="price"><br>
+    </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="description" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" id="description" placeholder="Enter Description" ngModel name="description"><br>
+    </div>
+      </div>
+   <div class="button">
+    <button type="submit" class="btn btn-danger">Add to the Menu</button>
+</div>
+  </form>
+</div>
+</div>
+
+<div class="heading">
+    <h3>
+        <button class="btn btn-danger" (click)="retrieveAllFoodItems()"> Click Here</button> 
+        to retrieve and update the menu</h3>
+ </div>       
+<div class="table">
+    <table border="7">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr *ngFor="let fooditem of fooditems">
+          <td>{{fooditem.id}}</td>
+          <td>{{fooditem.name}}</td>
+          <td>{{fooditem.category}}</td>
+          <td>{{fooditem.price}}</td>
+          <td>{{fooditem.description}}</td>
+          <td><button class="btn btn-primary" (click)="deleteRecord(fooditem.id)">Delete</button></td>
+          <td><button class="btn btn-success" (click)="updateRec(fooditem)">Update</button></td>
+        </tr>
+      </table>
+      <br/>
+  <!-- {{deleteMsg}} -->
+  <div *ngIf="flag" class="card-2">
+    <h2 style="color: firebrick;">Update Food Item price</h2>
+    <form (ngSubmit)="updateDbRecord()">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Id</label>
+      <div class="col-sm-10">
+        <input type="text" name="updateId" [(ngModel)]="updateId"/><br/>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10"> 
+        <input type="text" name ="updateName" [(ngModel)]="updateName"/><br/>
+      </div>
+    </div>  
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Category</label>
+      <div class="col-sm-10"> 
+        <input type="text" name ="updateCategory" [(ngModel)]="updateCategory"/><br/>
+      </div>
+    </div>    
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Price</label>
+      <div class="col-sm-10"> 
+        <input type="text" name ="updatePrice" [(ngModel)]="updatePrice"/><br/>
+      </div>
+    </div>  
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Description</label>
+      <div class="col-sm-10"> 
+        <input type="text" name ="updateDescription" [(ngModel)]="updateDescription"/><br/>
+      </div>
+    </div>
+    <!-- <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">Image</label>
+      <div class="col-sm-10"> 
+        <input type="text" name ="updateImage" [(ngModel)]="updateImage"/><br/>
+      </div>
+    </div>   -->
+      <button class="button-1 btn-success" type="submit">Submit</button>
+      <button class="button-1 btn-primary" type="reset">Reset</button>    
+    </form>
+    <br/>
+  </div>
+  <!-- {{updateMsg}} -->
+</div>

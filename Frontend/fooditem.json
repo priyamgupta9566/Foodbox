@@ -1,0 +1,92 @@
+{
+    "fooditem": [
+        {
+            "id": 1,
+            "title": "Veg Doubles Whopper",
+            "price": 250,
+            "description": "Veg Doubles whopper with tomato sauce",
+            "category": "Mexican",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/clrdepv9slr8c6yodqer"
+        },      
+        {
+            "id": 2,
+            "title": "Deluxe Thali",
+            "price": 350,
+            "description": "Served with One Baby Naan, One Baby Parantha, Dal Makhni, Paneer Subzi, Seasonal Vegetable, Pulao, Raita, Salad, Papad, Pickle & Sweet",
+            "category": "North Indian",
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/kcehsncjspxukgqbxvbr"
+          },      
+        {
+        "id": 3,
+        "title": "Farm House Pizza",
+        "price": 400,
+        "description": "Delightful combination of onion, tomatoes and grilled mushrooms",
+        "category": "Italian",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/dcphng3o7h6bqobhn7g4"
+      },
+      {
+        "id": 4,
+        "title": "Cold Coffee",
+        "price": 100,
+        "description": "Creamy Cold Coffee with chocolate ice cream",
+        "category": "Beverages",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xdgzji2nqgortmypprxd"
+      },
+      {
+        "id": 5,
+        "title": "Kadhai Paneer",
+        "price": 270,
+        "description": "Spicy cottage cheese flavoured with spices and dried chillies",
+        "category": "North Indian",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/yh7gcaiz2kd1ypwfqqjg"
+      },
+      {
+        "id": 6,
+        "title": "Pav Bhaji",
+        "price": 120,
+        "description": "All time favourite spicy and buttery Pav Bhaji",
+        "category": "North Indian",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/vu2inci80mrrpsik0ewv"
+      },
+      {
+        "id": 7,
+        "title": "Masala Dosa",
+        "price": 180,
+        "description": "Crispy rice crepes stuffed with spiced potato, served with lentil-based vegetable stew & coconut chutney.",
+        "category": "South Indian",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/uwttnafqeqj25trkfqbw"
+      },
+    {
+        "id": 8,
+        "title": "Green Salad",
+        "price": 150,
+        "description": "Slice of assorted vegetables with lemon vinaigrette.",
+        "category": "Healthy",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/e1rcqjhtlbdodbuabbos"
+      },
+    {
+        "id": 9,
+        "title": "Veg Chow mein",
+        "price": 210,
+        "description": "A flavor-packed dish with noodles and assorted veggies tossed in a soy, celery, chilli and vinegar based sauce.",
+        "category": "Chinese",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/woujh4adrulsdbjzg6pw"
+      },
+    {
+        "id": 10,
+        "title": "Veg Crunchy Volcano",
+        "price": 90,
+        "description": "Be ready for a crunchy, saucy, explosion. A crunchy volcano shell filled with beans & veg mix, chef's secret sauce, fresh onion & crisp lettuce.",
+        "category": "Mexican",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ljhtdtkkjocyjmczu994"
+      },
+      {
+        "id": 11,
+        "title": "Rasmalai - 2 Pieces",
+        "price": 109,
+        "description": "Rasmalai with cardamom-flavored paneer",
+        "category": "Sweet dishes",
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xrqtxxmurjfuxxn9h9gb"
+      }
+    ]
+}

@@ -1,0 +1,56 @@
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.card{
+    height: 55vh;
+    margin: 25px;
+    margin-top: -30px;
+    padding: 25px;
+    width: 100vh;
+}
+.button{
+    font-size: 14px !important;
+    font-weight: 400;
+    padding: 8px 72px;
+    border-radius: 3px !important;
+    text-align: center;
+}
+
+.table{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+ th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+  .heading{
+      margin-top: 450px;
+      text-align: left;
+      margin-left: 350px;
+      color: maroon;
+  }
+
+  .button-1{
+      background-color: rgb(107, 107, 170);
+      color: oldlace;
+      border-radius: 0.2cm;
+      margin: 5px;
+  }
+
+  .card-2{
+    height: 25vh;
+    margin: 25px;
+    margin-top: -30px;
+    margin-left: 250px;
+    padding: 25px;
+    width: 40vh;
+}

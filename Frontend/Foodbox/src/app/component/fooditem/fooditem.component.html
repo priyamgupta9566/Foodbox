@@ -1,0 +1,79 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="assets/images/fast-food.png" width="100" alt="">
+                <h6>All Food Items</h6>           
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('North Indian')">
+                <img src="assets/images/roti.png" width="100" alt="">
+                <h6>North-Indian</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('South Indian')">
+                <img src="assets/images/masala-dosa.png" width="100" alt="">
+                <h6>South-Indian</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Chinese')">
+                <img src="assets/images/pasta.png" width="100" alt="">
+                <h6>Chinese</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Italian')">
+                <img src="assets/images/pizza.png" width="100" alt="">
+                <h6>Italian</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Mexican')">
+                <img src="assets/images/taco.png" width="100" alt="">
+                <h6>Mexican</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Healthy')">
+                <img src="assets/images/salad.png" width="100" alt="">
+                <h6>Healthy</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Sweet dishes')">
+                <img src="assets/images/gulab-jamun.png" width="100" alt="">
+                <h6>Sweet Dishes</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Beverages')">
+                <img src="assets/images/cocktail.png" width="100" alt="">
+                <h6>Beverages</h6>
+            </a>
+        </div>
+        <!-- <div class="item">
+            <a>
+                <img src="assets/images/pizza.png" width="100" alt="">
+                <h6>Cakes</h6>
+            </a>
+        </div> -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ₹{{item.price}}</p>
+                <button class="btn btn-danger" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+        
+    </div>
+</div>
